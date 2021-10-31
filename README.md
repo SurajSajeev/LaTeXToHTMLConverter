@@ -31,3 +31,11 @@ In pursuance of this objective, had to write a LaTeX to HTML converter from scra
 * $\sum... $
 * $\int...   $
 
+To execute the program do the following:
+
+```
+flex a.l
+bison a.y 
+gcc lex.yy.c a.tab.c -o out
+./out <Input file name> <Output File name>
+```
